@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid } from '@material-ui/core';
+import { Box, Container, Grid } from '@material-ui/core';
 import { ROUTES_LIST } from 'routes/routesList';
 
 import { SidebarMenu } from 'components/SidebarMenu';
@@ -32,7 +32,9 @@ const PageLayout = ({ title, children }: React.PropsWithChildren<Props>) => {
           <Header toggleSidebar={toggleOpenHandler} title={title} />
         </Grid>
         <Grid item xs={12}>
-          {children}
+          <Container>
+            <Box>{children}</Box>
+          </Container>
         </Grid>
       </Grid>
     </React.Fragment>

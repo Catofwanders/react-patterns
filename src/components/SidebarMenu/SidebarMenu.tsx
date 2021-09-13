@@ -39,7 +39,7 @@ const SidebarMenu = ({
           </Typography>
         ) : (
           <ListItem key={`sidebar-menu-item-${idx}`}>
-            <Link to={item[i]}>
+            <Link to={`${item.link}${item[i]}`}>
               <Typography variant="body2" color="textPrimary">
                 {i.toUpperCase()}
               </Typography>
