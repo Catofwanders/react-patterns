@@ -1,4 +1,25 @@
 export const ROUTES_LIST = {
   home: '/',
-  extraLink: '/',
+  basic: {
+    link: '/basic',
+    objects: '/objects',
+    arrays: '/arrays',
+    helpfulFeatures: '/helpfulFeatures',
+  },
+  patterns: {
+    link: '/patterns',
+    constructor: '/constructor',
+    module: '/module',
+    revealingModule: '/revealingModule',
+    factory: '/factory',
+    singleton: '/singleton',
+    decorator: '/decorator',
+    facade: '/facade',
+    observer: '/observer',
+    mediator: '/mediator',
+    command: '/command',
+    prototype: '/prototype',
+    mixin: '/mixin',
+    flyweight: '/flyweight',
+  },
 };
